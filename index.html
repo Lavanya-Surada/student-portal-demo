@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Document Structure Diagram</title>
+  <style>
+    body {
+      font-family: monospace;
+      white-space: pre;
+      background-color: #f4f4f4;
+      padding: 20px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+[ HTML Document ]
+        │
+ ┌──────┴───────┐
+ │              │
+[ HEAD ]     [ BODY ]
+ │              │
+ ├──────────┐    ├─────────────────────────────────┐
+ │          │    │                                 │
+meta       viewport                         [ HEADER ]         
+charset                                   │
+ │                                        <h1>
+title                                     └─── “Explore Travel Destinations”
+ │
+style
+ │
+ └───────────────────────────────────────────────┐
+                                                 │
+                                        [ CARDS CONTAINER ]
+                                                 │
+      ┌───────────────────────────────┬──────────┬──────────────┬────────────────────┐
+ [CARD: Paris]                  [CARD: Tokyo] [CARD: New York] [CARD: Cape Town]
+      │                                 │             │                │
+     img                               img           img              img
+      │                                 │             │                │
+ card-content                   card-content   card-content     card-content
+      │                                 │             │                │
+h3, p, continent           h3, p, continent  h3, p, continent h3, p, continent
+</body>
+</html>
+
